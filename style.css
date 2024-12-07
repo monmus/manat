@@ -117,7 +117,7 @@ body {
 }
 
 .section header {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .section header strong {
@@ -186,7 +186,7 @@ nav ul li a::after {
 
   position: absolute;
   left: 0;
-  bottom: -1.5rem;
+  bottom: -0.5rem;
 
   transition: width 0.2s;
 }
@@ -230,7 +230,7 @@ nav.show .menu ul {
 }
 
 nav.show ul.grid {
-  gap: 4rem;
+  gap: 1rem;
 }
 
 /* ------ Tggle Menu ( liga / desliga ) --------*/
@@ -344,7 +344,7 @@ nav.show div.icon-close {
   margin-right: 1.5rem;
 }
 
-/* ----------- Services -------------*/
+/* ----------- HOW -------------*/
 .cards.grid {
   gap: 1.5rem;
 }
@@ -354,7 +354,7 @@ nav.show div.icon-close {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
-  text-align: center;
+  text-align: justify;
 }
 
 .card i {
@@ -368,6 +368,108 @@ nav.show div.icon-close {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
+
+/* ----------- TEAM -------------*/
+#team {
+  background: white;
+}
+
+.cards.grid {
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 3.625rem 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: 0.25rem 0.25rem 0 0;
+  text-align: justify;
+}
+
+.card i {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--base-color);
+}
+
+.card .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ----------- MINDFUNLESS -------------*/
+#mindfulness .container {
+  margin: 0;
+}
+
+#mindfulness .image {
+  position: relative;
+}
+
+#mindfulness .image::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--base-color);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+}
+
+#mindfulness .image img {
+  position: relative;
+}
+
+#mindfulness .image img,
+#mindfulness .image::before {
+  border-radius: 0.25rem;
+}
+
+#mindfulness .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* ----------- TRAINING -------------*/
+#training {
+  background: white;
+}
+
+#training .container {
+  margin: 0;
+}
+
+#training .image {
+  position: relative;
+}
+
+#training .image::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--base-color);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+}
+
+#training .image img {
+  position: relative;
+}
+
+#training .image img,
+#training .image::before {
+  border-radius: 0.25rem;
+}
+
+#training .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 /* ----------- Testemonials -------------*/
 #testimonials {
   background: white;
@@ -440,6 +542,10 @@ nav.show div.icon-close {
 }
 
 /* ----------- Contact -------------*/
+#contact {
+  background: white;
+}
+
 #contact .grid {
   gap: 4rem;
 }
@@ -544,7 +650,7 @@ footer .social a:hover {
   }
 
   .section {
-    padding: 10rem 0;
+    padding: 7rem 0;
   }
 
   .section header,
@@ -613,9 +719,45 @@ footer .social a:hover {
     grid-auto-flow: column;
   }
 
+  /* mindfulness */
+  #mindfulness .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #mindfulness .image {
+    width: 70vh;
+  }
+
+  #mindfulness p {
+    width: 140vh;
+  }
+
+  /* training */
+  #training .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #training .image {
+    width: 70vh;
+  }
+
+  #training p {
+    width: 140vh;
+  }
+
   /* services */
   .cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards-team {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .card {
