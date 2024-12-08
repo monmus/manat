@@ -745,8 +745,8 @@ footer .social a:hover {
     width: 70vh;
   }
 
-  #mindfulness p {
-    width: 140vh;
+  #mindfulness .text {
+    width: 80vh;
   }
 
   /* training */
@@ -761,8 +761,8 @@ footer .social a:hover {
     width: 70vh;
   }
 
-  #training p {
-    width: 140vh;
+  #training .text {
+    width: 80vh;
   }
 
   /* services */
