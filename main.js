@@ -60,7 +60,7 @@ scrollReveal.reveal(
 	#about .image, #about .text,
   #how .image, #how .text,
   #team .card, #team .text,
-  #mindfulness .image, #mindfulness .text,
+  #mindfulness .text, #mindfulness .image,
   #training .image, #training .text,
 	#contact .text, #contact .links,
 	footer .brand, footer .social
@@ -109,4 +109,25 @@ window.addEventListener("scroll", () => {
   changeHeaderWhenScroll();
   backToTop();
   activateMenuAtCurrentSection();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const contentContainers = document.querySelectorAll(".content");
+
+  contentContainers.forEach((content, index) => {
+    const showMoreButton = document.createElement("div");
+    showMoreButton.classList.add("show-more");
+    showMoreButton.innerHTML = "Zobacz więcej &#9660"; // Use &#9650; for chevron-up
+    content.parentNode.insertBefore(showMoreButton, content.nextSibling);
+
+    showMoreButton.addEventListener("click", function () {
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        showMoreButton.innerHTML = "Zobacz więcej &#9660"; // Use &#9650; for chevron-up
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        showMoreButton.innerHTML = "Zobacz mniej &#9650"; // Use &#9660; for chevron-down
+      }
+    });
+  });
 });
