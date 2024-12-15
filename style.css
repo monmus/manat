@@ -413,7 +413,7 @@ nav.show div.icon-close {
 }
 
 .card .content {
-  max-height: 85px; /* Adjust the initial max-height as needed */
+  max-height: 75px; /* Adjust the initial max-height as needed */
   overflow: hidden;
   transition: max-height 0.3s ease; /* Add smooth transition effect */
 }
@@ -770,7 +770,7 @@ footer .social a:hover {
   }
 
   #mindfulness .text {
-    width: 80vh;
+    width: 60vh;
   }
 
   /* training */
