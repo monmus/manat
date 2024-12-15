@@ -59,7 +59,6 @@ scrollReveal.reveal(
   `#home .image, #home .text,
 	#about .image, #about .text,
   #how .image, #how .text,
-  #team .card, #team .text,
   #mindfulness .text, #mindfulness .image,
   #training .image, #training .text,
 	#contact .text, #contact .links,
