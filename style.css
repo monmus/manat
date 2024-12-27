@@ -333,7 +333,7 @@ nav.show div.icon-close {
   background: var(--base-color);
   position: absolute;
   top: -8.3%;
-  left: -33%;
+  left: -9%;
   z-index: 0;
 }
 
@@ -485,11 +485,11 @@ nav.show div.icon-close {
 #training .image::before {
   content: "";
   height: 100%;
-  width: 100%;
+  width: 80%;
   background: var(--base-color);
   position: absolute;
   top: -8.3%;
-  left: -33%;
+  left: -9%;
   z-index: 0;
 }
 
