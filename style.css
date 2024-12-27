@@ -101,7 +101,7 @@ body {
 
 .grid {
   display: grid;
-  gap: 8rem;
+  gap: 3rem;
 }
 
 .section {
