@@ -101,7 +101,7 @@ body {
 
 .grid {
   display: grid;
-  gap: 5rem;
+  gap: 8rem;
 }
 
 .section {
@@ -285,13 +285,13 @@ nav.show div.icon-close {
   background: var(--base-color);
   position: absolute;
   top: -16.8%;
-  left: 12.7%;
+  left: 7.7%;
   z-index: 0;
 }
 
 #home .image img {
   position: relative;
-  left: 2rem;
+  left: 1rem;
 }
 
 #home .image img,
