@@ -101,11 +101,11 @@ body {
 
 .grid {
   display: grid;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .section {
-  padding: calc(0.5rem + var(--header-height)) 0;
+  padding: calc(0.1rem + var(--header-height)) 0;
 }
 
 .section .title {
@@ -469,6 +469,12 @@ nav.show div.icon-close {
   margin-right: 1.5rem;
 }
 
+/* ----------- NEWS -------------*/
+#news {
+  background-color: white;
+}
+
+
 /* ----------- TRAINING -------------*/
 #training {
   background: white;
@@ -580,17 +586,21 @@ nav.show div.icon-close {
 }
 
 /* ----------- Contact -------------*/
-#contact {
+/* #contact {
   background: white;
-}
+} */
 
 #contact .grid {
   gap: 4rem;
 }
 
-/* #contact .text p {
-  margin-bottom: 2rem;
-} */
+#contact .text p {
+  font-size: 0.9rem;
+}
+
+#contact .list_contact {
+  line-height: 22px;
+}
 
 #contact .button i,
 #contact ul li i {
@@ -743,6 +753,7 @@ footer .social a:hover {
     grid-auto-flow: column;
     justify-content: space-between;
     margin: 0 auto;
+    gap: 8rem;
   }
 
   #home .image {
@@ -802,8 +813,6 @@ footer .social a:hover {
     grid-template-columns: 1fr 1fr;
   }
 
- 
-
   .card {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -822,7 +831,7 @@ footer .social a:hover {
   }
 
   #contact .text {
-    max-width: 25rem;
+    max-width: 40rem;
   }
 
   /* footer */
@@ -880,6 +889,10 @@ footer .social a:hover {
 @media (max-width: 448px) {
   #home {
     padding-top: 12rem;
+  }
+
+  #home .container {
+    gap: 4rem;
   }
 
   .card .content.one {
