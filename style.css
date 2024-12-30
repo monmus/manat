@@ -446,11 +446,11 @@ nav.show div.icon-close {
 #mindfulness .image::before {
   content: "";
   height: 100%;
-  width: 100%;
+  width: 90%;
   background: var(--base-color);
   position: absolute;
   top: -8.3%;
-  left: -33%;
+  left: -8%;
   z-index: 0;
 }
 
