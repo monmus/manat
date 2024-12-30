@@ -910,6 +910,9 @@ footer .social a:hover {
   .card .content.five {
     max-height: 90px;
   }
+  .card .content.six {
+    max-height: 95px;
+  }
   .card .content.seven {
     max-height: 95px;
   }
