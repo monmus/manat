@@ -20,7 +20,7 @@ img {
 
 /*--------- Variables -----------*/
 :root {
-  --header-height: 6.5rem;
+  --header-height: 6.3rem;
 
   /* Colors */
   --hue: 138;
@@ -210,7 +210,7 @@ nav .menu ul {
 }
 
 nav .logo_header{
-  width: 55%;
+  width: 50%;
   height: 25%;
 }
 
@@ -636,7 +636,7 @@ footer .logo {
 }
 
 footer .logo_footer{
-  width: 55%;
+  width: 50%;
 }
 
 footer .brand p {
