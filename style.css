@@ -417,7 +417,7 @@ nav.show div.icon-close {
 }
 
 .card .content {
-  max-height: 90px; 
+  max-height: 95px; 
   overflow: hidden;
   transition: max-height 0.3s ease; /* Add smooth transition effect */
 }
