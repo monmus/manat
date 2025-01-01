@@ -417,7 +417,7 @@ nav.show div.icon-close {
 }
 
 .card .content {
-  max-height: 95px; 
+  max-height: 90px; 
   overflow: hidden;
   transition: max-height 0.3s ease; /* Add smooth transition effect */
 }
@@ -446,11 +446,11 @@ nav.show div.icon-close {
 #mindfulness .image::before {
   content: "";
   height: 100%;
-  width: 90%;
+  width: 100%;
   background: var(--base-color);
   position: absolute;
   top: -8.3%;
-  left: -8%;
+  left: -33%;
   z-index: 0;
 }
 
@@ -627,7 +627,7 @@ footer {
 }
 
 footer.section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 footer .logo {
@@ -640,6 +640,11 @@ footer .logo_footer{
 }
 
 footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer .brand a {
   color: var(--text-color-light);
   margin-bottom: 0.75rem;
 }
@@ -910,10 +915,7 @@ footer .social a:hover {
   .card .content.five {
     max-height: 90px;
   }
-  .card .content.six {
-    max-height: 90px;
-  }
   .card .content.seven {
-    max-height: 95px;
+    max-height: 90px;
   }
 }
